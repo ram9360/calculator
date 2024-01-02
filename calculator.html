@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>SR Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <h1 class="h1">SR CALCULATOR</h1>
+    <div class="container">
+        <div class="Calculator">
+            <input type="text" placeholder="0" id="op">
+            <button onclick="Clear()">CLR</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="calculate()"class="equal">=</button>
+        </div>
+    </div>
+    <h1 class="he2">Calculator Use</h1>
+    <h1 class="he1">
+        This is a simple calculator with memory functions similar to a <br>
+        small handheld calculator. Use this basic calculator online for <br>
+        math with addition, subtraction, division and multiplication.  <br>
+        The calculator includes functions for square root, percentage,<br>
+        pi, exponents, powers and rounding. How to do repeating operations, <br>
+        higher powers and roots, memory and clear functions for this standard <br>
+        calculator are explained below. Control the calculator using a mouse,<br> 
+        keyboard or number pad, or by touch if supported by your device. <br>
+        
+        What Are the Functions on the Calculator?
+            <ol> ÷   Division</ol>
+            <ol> ×   Multiplication</ol>
+            <ol> +   Addition</ol>
+            <ol> −   Subtraction</ol>
+            <ol> =   Calculate</ol>
+            <ol> CLR   Memory clear</ol>
+            <ol> %   Percentage</ol>
+        
+    </h1>
+    <script>
+        let outputScreen = document.getElementById("op");
+
+        function display(num){
+            outputScreen.value += num;
+        }
+        function calculate(){
+            try{
+                outputScreen.value = eval(outputScreen.value);
+            }
+            catch(err)
+            {
+                alert("INVALID OPERATION")
+            }
+        }
+        function Clear(){
+            outputScreen.value ="";
+        }
+        function del(){
+            outputScreen.value = outputScreen.value.slice(0,-1);
+        }
+    </script>
+</body>
+</html>

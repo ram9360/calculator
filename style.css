@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+}
+h1{
+    font-size: 80px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 2%;
+    margin: auto;
+    color: rgb(218, 159, 238);
+    background-color: rgb(5, 51, 63);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/img1.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.Calculator{
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px; 
+    box-shadow: inset 5px 5px 12px white,5px 5px 12px black;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: white;
+    box-shadow: inset -5px -5px 12px rgb(233, 180, 180),inset 5px 5px 12px rgb(233, 180, 180);
+    border-radius: 30px;
+    border: none;
+    font-size: 40px;
+    text-align: end;
+    color: rgb(70, 70, 70);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+button{
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    box-shadow: -5px -5px 12px rgb(233, 180, 180),5px 5px 12px rgb(233, 180, 180);
+    border: none;
+    border-radius: 30%;
+    margin: 8px;
+    font-size: 20px;
+}
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: -5px -5px 12px rgb(233, 180, 180),5px 5px 12px rgb(233, 180, 180);
+}
+.he1{
+    background-color:rgb(5, 51, 63);
+    color: black;
+    font-size: 30px;
+    text-align: center;
+
+}
+ol{
+    background-color:rgb(5, 51, 63);
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
